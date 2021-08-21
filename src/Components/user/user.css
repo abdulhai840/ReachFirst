@@ -1,0 +1,19 @@
+.input {
+    display: flex;
+    width: 300px;
+    margin-top: 20px !important;
+    border-radius: 6px;
+    padding: 10px;
+    height: 40px;
+}
+.button{
+    margin-top: 20px !important;
+    background-color: royalblue;
+    border: 1px solid rosybrown;
+    color: white;
+    width: 300px;
+    height: 40px;
+    outline: none;
+    border-radius: 6px;
+
+}

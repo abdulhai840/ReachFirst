@@ -1,0 +1,175 @@
+.formInstruction{
+    color: #212529;
+    font-size: 16px;
+    padding-top: 0;
+    margin-bottom: 0px;
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1) !important;
+    margin-block-start: 10px !important;
+    margin: 0px -6%;
+}
+.stepperDesignActive{
+   background-color: #006AB3;
+   width: 100%;
+   border-left: 1px solid #707070;
+   border-top-right-radius: 45px;
+   height: 71px;
+   border-bottom-right-radius: 45px;
+}
+.stepperDesignCompleted{
+    background-color: #006AB3;
+    width: 100%;
+    border-left: 1px solid #707070;
+    height: 71px;
+ }
+.stepperDesignInActive{
+    background-color: #DEE2E6;
+    width: 100%;
+    height: 71px;
+    border-left: 1px solid #d4d2d2;
+    color: #495057;
+ }
+ .noPM{
+     padding: 0% 0% !important;
+     margin: 0%  0% !important;
+ }
+ .stepperRow{
+    background-color: #DEE2E6;
+    font-size: 20px;
+    font-weight: medium;
+    color: white;
+ }
+ .descripition {
+     width: 100%;
+    }
+
+.fileUploadBtn{
+    width: 330PX;
+    height: 60px;
+    background-color: #47CB5D;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #47CB5D;
+    color: white;
+    font-size: 16px;
+}
+.previous{
+    width: 278px;
+    height: 60px;
+    color: #8C8C8C;
+    border: 1px solid #979797;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.next{
+    width: 278px;
+    height: 60px;
+    background-color: #006BB3;
+    color: white;
+    border: 1px solid #006BB3;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.stepsNumber{
+    color: #006BB3;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.fileUploadLabel{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.startDate{
+    width: 100%;
+}
+.day{
+    width: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #EFECEC;
+    border-radius: 5px;
+    color: #ACACAC;
+    font-size: 20px;
+    font-weight: bold;
+}
+.daySelect{
+    margin-top: 40px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #006AB3;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.day:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.daySelect:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.timeCon{
+    width: 100%;
+    background-color: #EFECEC;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+}
+.timeDay{
+    background-color: #D5D8DA;
+    width: 40%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    height: 50px;
+    font-size: 16px;
+    color: #ACACAC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeDay:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.timeDaySelect{
+    background-color: #006AB3;
+    width: 40%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.time{
+    width: 60%;
+    font-size: 16px;
+    color: #ACACAC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ACACAC;
+    font-size: 16px;
+}
