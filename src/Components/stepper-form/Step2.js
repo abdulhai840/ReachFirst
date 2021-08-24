@@ -37,9 +37,9 @@ export default function Step2() {
       };
 
     return (
-        <Container className="mt-5 px-0">
+        <Container className="mt-5">
         <Row>
-            <Col xs={6}>
+            <Col className="col-md-6 col-12 mt-1">
             <Autocomplete
              onChange={(event, value) => handleChange(event, value)}
              value={step2Data.hourlyRate}
@@ -57,7 +57,7 @@ export default function Step2() {
                 />}
                 />
             </Col>
-            <Col xs={6}>
+            <Col className="col-md-6 col-12 mt-1">
             <TextField
                 onChange={(event, value) => handleChange(event,value )}
                 id="satrtDate"
@@ -70,7 +70,7 @@ export default function Step2() {
                 }}
             />
             </Col>
-            <Col xs={6} className="mt-5">
+            <Col className=" col-md-6 col-12 mt-5">
             <Autocomplete
              onChange={(event, value) => handleChange(event, value)}
              value={step2Data.careerLevel}
@@ -88,7 +88,7 @@ export default function Step2() {
                 />}
                 />
             </Col>
-            <Col xs={6} className="mt-5">
+            <Col className="mt-5 col-md-6 col-12 ">
             <Autocomplete
              onChange={(event, value) => handleChange(event, value)}
              value={step2Data.gender}
@@ -132,7 +132,6 @@ export default function Step2() {
     )
 }
 
-
-const hr = ["5$", "10$", "15$" ,"20$", "25$"];
+const hr = ["10$", "15$" ,"20$", "25$"];
 const cl = ["junior","medium","senior"];
 const gen = ["Male", "Female"];

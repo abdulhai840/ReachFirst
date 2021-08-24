@@ -34,7 +34,7 @@ export default function Step1({step}) {
     return (
         <Container className="mt-5 px-0">
             <Row>
-                <Col xs={6}>
+                <Col className="col-md-6 col-12 mt-1">
                 <Autocomplete
                     onChange={(event, value) => handleChange(event, value)}
                     id="lookingFor"
@@ -52,7 +52,7 @@ export default function Step1({step}) {
                     />}
                     />
                 </Col>
-                <Col xs={6}>
+                <Col className="col-md-6 col-12 mt-1">
                 <Autocomplete
                     value={step1Data.experience}
                     onChange={(event, value) => handleChange(event, value)}
@@ -70,7 +70,7 @@ export default function Step1({step}) {
                     />}
                     />
                 </Col>
-                <Col xs={6} className="mt-5">
+                <Col className="mt-5 col-md-6 col-12">
                 <Autocomplete
                     value={step1Data.education}
                     onChange={(event, value) => handleChange(event, value)}
@@ -136,4 +136,3 @@ const jobs = ["React Js", "Node js", "OS"]
 const skill = ["React", "Node", "SRE"]
 const experience = ["1", "2", "3", "4", "5"]
 const education = ["BS", "MS", "PhD"]
-

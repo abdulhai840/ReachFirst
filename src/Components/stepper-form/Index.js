@@ -62,7 +62,7 @@ export default function Index(props) {
     // eslint-disable-next-line
     const [totalSteps, setTotalSteps] = useState(3);
     return (
-        <Container fluid>
+        <Container >
             <Container className="py-4">
                 <Row>
                     <Col xs={12}>

@@ -40,7 +40,7 @@ const handleEdit = () => {
     return (
       <>
       <input type="text" className="w-100 border rounded mt-5 p-3" placeholder="Search job" onChange={handleChange} /> 
-        <Table striped bordered hover>
+        <Table striped bordered hover className="responsive">
         <thead>
           <tr>
             <th>Title</th>

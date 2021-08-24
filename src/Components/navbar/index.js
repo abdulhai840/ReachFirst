@@ -80,7 +80,10 @@ export default function PrimarySearchAppBar() {
           {
             notification.map(job => {
               return (
+                <>
                 <MenuItem value=""> {job.title}</MenuItem>
+                <MenuItem value=""> {job.message}</MenuItem>
+                </>
               )
             })
           }
