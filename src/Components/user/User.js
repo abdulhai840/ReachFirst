@@ -29,7 +29,7 @@ export default function User() {
         .catch(err => console.log(err))
       }
 
-    useEffect(() => {
+    useEffect(() => { 
         getData()
     }, [])
 

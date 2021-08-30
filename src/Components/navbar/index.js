@@ -48,46 +48,51 @@ export default function PrimarySearchAppBar() {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography class="ml-5 mr-5">
-          <Link onClick={() => history.push("/jobs/view")} color="inherit">
-            Jobs
-          </Link>
-        </Typography>
-        <Typography class="ml-5 mr-5">
-          <Link onClick={() => history.push("/user")} color="inherit">
-            User
-          </Link>
-        </Typography>
-        <Typography class="ml-5 mr-5">
-          <Link onClick={() => history.push("/")} color="inherit">
-            Create Job
-          </Link>
-        </Typography>
-        <IconButton color="inherit" id="demo-controlled-open-select-label">
-          <Badge badgeContent={jobsCount} color="primary">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <Select
-          labelId="demo-controlled-open-select-label"
-          id="demo-controlled-open-select"
-          open={open}
-          onClose={handleClose}
-          onOpen={handleOpen}
-          value={age}
-          onChange={handleChange}
-        >
-          {
-            notification.map(job => {
-              return (
-                <>
-                <MenuItem value=""> {job.title}</MenuItem>
-                <MenuItem value=""> {job.message}</MenuItem>
-                </>
-              )
-            })
-          }
-        </Select>
+        <div className="mr-auto row">
+          <Typography class="ml-5 mr-5">
+            <Link onClick={() => history.push("/jobs/view")} color="inherit">
+              Jobs
+            </Link>
+          </Typography>
+          <Typography class="ml-5 mr-5">
+            <Link onClick={() => history.push("/user")} color="inherit">
+              User
+            </Link>
+          </Typography>
+          <Typography class="ml-5 mr-5">
+            <Link onClick={() => history.push("/")} color="inherit">
+              Create Job
+            </Link>
+          </Typography>
+        </div>
+        <div className="ml-auto">
+          <IconButton color="inherit" id="demo-controlled-open-select-label">
+            <Badge badgeContent={jobsCount} color="primary">
+              <NotificationsIcon />
+            </Badge>
+          </IconButton>
+          <Select
+            labelId="demo-controlled-open-select-label"
+            id="demo-controlled-open-select"
+            open={open}
+            onClose={handleClose}
+            onOpen={handleOpen}
+            value={age}
+            onChange={handleChange}
+          >
+            {
+              notification.map(job => {
+                return (
+                  <>
+                    <MenuItem value=""> {job.title}</MenuItem>
+                    <MenuItem value=""> {job.message}</MenuItem>
+                  </>
+                )
+              })
+            }
+          </Select>
+        </div>
+
       </Toolbar>
     </AppBar>
   );

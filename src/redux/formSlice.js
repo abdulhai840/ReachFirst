@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+
 export const formSlice = createSlice({
   name: 'form',
   initialState: {
@@ -8,11 +9,12 @@ export const formSlice = createSlice({
   },
   reducers: {
     addJob: (state, action) => {
+      // eslint-disable-next-line
       const {step1, step2, step3} = action.payload
       const job = {
         lookingFor: step1.lookingFor, experience: step1.experience,  education: step1.education,  skills: step1.skills, description: step1.description,
         hourlyRate: step2.hourlyRate, careerLevel: step2.careerLevel,  satrtDate: step2.satrtDate,  gender: step2.gender, equiqSpecification: step2.equiqSpecification,
-        selectedDays: [...step3.days], selectedTimes: [...step3.daysTime]
+        // selectedDays: [...step3.days], selectedTimes: [...step3.daysTime]
       }
 
       state.jobs.push(job)

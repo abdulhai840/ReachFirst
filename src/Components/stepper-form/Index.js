@@ -37,6 +37,12 @@ export default function Index(props) {
     }
 
     const handleNext = () => {
+        // if (step === 1) {
+        //     const step1 = JSON.parse(localStorage.getItem("step1Data"))
+        //     if (step1 == "") {
+        //         alert('Required')
+        //     }
+        // }
         if (step === 3) {
             const step1 = JSON.parse(localStorage.getItem("step1Data"))
             const step2 = JSON.parse(localStorage.getItem("step2Data"))
@@ -46,6 +52,7 @@ export default function Index(props) {
             if (dayTime === null) return
             const step3 = { days: [...days], daysTime: [...dayTime] }
             const job = { step1: { ...step1 }, step2: { ...step2 }, step3 }
+            console.log(job)
             dispatch(addJob(job))
             dispatch(addNotification(job))
             return history.push("/jobs/view")

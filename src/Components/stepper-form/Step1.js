@@ -128,6 +128,7 @@ export default function Step1({step}) {
                     <button type="file" className={styles.fileUploadBtn}>GO TO SELECT TEMPLATE</button>
                 </Col>
             </Row>
+        
         </Container>
     )
 }
